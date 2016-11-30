@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title> Color Guessing Game </title>
+</head>
+
+<body>
+  <script>
+    var color = ["aqua", "black", "cyan", "darkred", "forestgreen", "gold",
+    "hotpink", "ivory", "khaki", "lavender", "magenta", "navy", "orange"];
+    var random_index;
+    var guess_input_color;
+    var target_color;
+    var guess_number = 0;
+    var finished = false;
+
+    function do_game() {
+      var random_index = Math.floor(Math.random() * color.length);
+      target_color = color[random_index];
+      while(!finished){
+        guess_input_color = prompt("I'm thinking of one of these colors : \n\n"
+        + color + "\n\n What color am I thinking of" + "\n\n You made " +
+        guess_number + " guesses");
+        guess_number += 1;
+        finished = (guess_input_color == target_color);
+      }
+    }
+    do_game();
+  </script>
+</body>
+
+</html>
