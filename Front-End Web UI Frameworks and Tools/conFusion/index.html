@@ -107,6 +107,7 @@
   </header>
 
     <div class="container">
+
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3 col-sm-push-9">
                 <p style="padding:20px;"></p>
@@ -133,7 +134,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3">
@@ -173,6 +173,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row row-content">
           <div class="col-xs-12 col-sm-3">
               <p style="padding:20px;"></p>
@@ -191,18 +192,26 @@
                       <label class="radio-inline"><input type="radio" name="guest"> 6 </label>
                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="date" class="col-sm-2 control-label">Date and Time</label>
+                <div class="form-group has-feedback">
+                    <label for="datentime" class="col-sm-2 control-label">Date and Time</label>
                     <div class="col-sm-4">
-                      <input type="date" name="date">
+                      <input type="date" name="date" class="form-control" placeholder="Date">
+                      <span class="glyphicon glyphicon-calendar form-control-feedback" aria-hidden="true"></span>
                     </div>
                     <div class="col-sm-4">
-                      <input type="time" name="time">
+                      <input type="time" name="time" class="form-control" placeholder="Time">
+                      <span class="glyphicon glyphicon-time form-control-feedback"></span>
                     </div>
                 </div>
-
-
+                <div class="col-sm-1 col-sm-push-2" style="padding:0px">
+                  <button type="submit" class="btn btn-primary">Reserve</button>
+                </div>
               </form>
+              <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                  <strong>Warning!:</strong> Please <a href="+852 1234 5678" class="alert-link">call</a> us to reserve for more than six guests
+              </div>
           </div>
         </div>
     </div>
