@@ -62,6 +62,14 @@ body{
     color:#000000;
 }
 
+<<<<<<< HEAD
 .affix {
   top:100px;
+=======
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+>>>>>>> 08b0320aed56aa13674472438a6355a40af371c3
 }
