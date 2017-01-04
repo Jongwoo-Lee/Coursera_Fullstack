@@ -73,16 +73,16 @@ body{
 }
 
 .carousel {
-  background:#1A237E;
+  background:#1A237E !important;
 }
 
 .carousel .item {
-  height: 300px;
+  height: 300px !important;
 }
 
 .item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 300px;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  min-height: 300px !important;
 }
