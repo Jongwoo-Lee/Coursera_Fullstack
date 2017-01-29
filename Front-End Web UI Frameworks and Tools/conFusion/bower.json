@@ -1,0 +1,22 @@
+{
+  "name": "conFusion",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Jongwoo-Lee/Coursera_Fullstack",
+  "authors": [
+    "Jongwoo-Lee <jongwoolee2014@u.northwestern.edu>"
+  ],
+  "description": "Website for an awesome restaurant",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
