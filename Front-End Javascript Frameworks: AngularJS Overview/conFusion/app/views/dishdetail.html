@@ -65,7 +65,7 @@
                      <div class="col-sm-10">
                        <input type="text" class="form-control" id="yourname"
                        name="yourname" placeholder="Enter Your Name"
-                       ng-model="review.name" required>
+                       ng-model="mycomment.author" required>
                        <span ng-show="commentForm.yourname.$error.required
                        && !commentForm.yourname.$pristine" class="help-block">
                        Your name is required.</span>
@@ -76,15 +76,15 @@
                      <label for="num_star" class="col-sm-2 control-label">Number of Stars</label>
                      <div class="col-sm-10">
                        <label class="radio-inline"><input type="radio"
-                         ng-model="review.rating" value="1" name="star"> 1 </label>
+                         ng-model="mycomment.rating" value="1" name="star"> 1 </label>
                        <label class="radio-inline"><input type="radio"
-                         ng-model="review.rating" value="2" name="star"> 2 </label>
+                         ng-model="mycomment.rating" value="2" name="star"> 2 </label>
                        <label class="radio-inline"><input type="radio"
-                         ng-model="review.rating" value="3" name="star"> 3 </label>
+                         ng-model="mycomment.rating" value="3" name="star"> 3 </label>
                        <label class="radio-inline"><input type="radio"
-                         ng-model="review.rating" value="4" name="star"> 4 </label>
+                         ng-model="mycomment.rating" value="4" name="star"> 4 </label>
                        <label class="radio-inline"><input type="radio"
-                         ng-model="review.rating" value="5" name="star"> 5 </label>
+                         ng-model="mycomment.rating" value="5" name="star"> 5 </label>
                     </div>
                   </div>
 
@@ -94,7 +94,7 @@
                       <label for="yourcomment" class="col-sm-2 control-label">Your Comments</label>
                       <div class="col-sm-10">
                           <textarea class="form-control" id="yourcomment" name="yourcomment"
-                          rows="12" ng-model="review.comments" required>
+                          rows="12" ng-model="mycomment.comment" required>
                           </textarea>
                           <span ng-show="commentForm.yourcomment.$error.required
                           && !commentForm.yourcomment.$pristine" class="help-block">
